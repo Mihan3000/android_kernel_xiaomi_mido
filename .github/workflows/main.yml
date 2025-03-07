@@ -65,7 +65,7 @@ jobs:
           export CROSS_COMPILE_ARM32="arm-linux-gnueabi-"
           export TRIPLE="aarch64-linux-gnu-"
           cd $GITHUB_WORKSPACE/workdir/source
-          make O=out m1721_k-nel_defconfig
+          make O=out m1721_defconfig
           make -j$(nproc --all) O=out
 
       - name: Check a kernel output files
